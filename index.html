@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <style>
+        .msg-sucesso, .msg-erro {
+            display: none;
+            font-size: 1.2rem;
+        }
+        .msg-sucesso {
+            background-color: green;
+            color: #fff;
+            max-width: fit-content;
+        }
+        .msg-erro {
+            background-color: red;
+            color: #fff;
+            max-width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Formulário de Validação</h1>
+            <form id="form-validacao">
+                <label for="campoA">Primeiro Número</label>
+                <input type="number" id="campoA" required placeholder="Digite o primeiro número" /><br><br>
+
+                <label for="campoB">Segundo Número</label>
+                <input type="number" id="campoB" required placeholder="Digite o segundo número" /><br><br>
+
+                <button type="submit">Submeter</button>
+            </form>
+            <p class="msg-sucesso">Sucesso! O número B é maior que o número A.</p>
+            <p class="msg-erro">Erro! O número B deve ser maior que o número A.</p>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
